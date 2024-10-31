@@ -1,0 +1,29 @@
+{
+    "apiVersion": 2,
+    "name": "quick-questionnaire/list",
+    "title": "Quick Questionnaire",
+    "icon": "list-view",
+    "category": "layout",
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./css/qq-editor.css",
+    "style": "file:./css/qq.css",
+    "attributes": {
+        "content": {
+            "type": "string",
+            "source": "html",
+            "multiline": "li",
+            "selector": "ol, ul"
+        },
+        "showButton": {
+            "type": "boolean",
+            "default": false
+        },
+        "ordered": {
+            "type": "boolean",
+            "default": false
+        },
+        "qqId": {
+            "type": "integer"
+        }
+    }
+}
